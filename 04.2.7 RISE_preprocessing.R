@@ -1,0 +1,17 @@
+rm(list = ls())
+gc()
+library(stringr)
+library(clusterProfiler)
+library(org.Hs.eg.db)
+library(tidyverse)
+library(openxlsx)
+setwd('F:/my projects/02.论文/论文四_桥本甲状腺炎/Project/Datas/Intersctomes/')
+RISE <- read.table('07.RISE/rise_human_all.txt',sep='\t')
+RISE <- RISE[,c('V12','V14')]
+sum(is.na(RISE))
+sum(is.null(RISE))
+colnames(RISE) <- c('Gene1','Gene2')
+sum(duplicated(paste(RISE$Gene1,RISE$Gene2)))
+RISE <- RISE[!duplicated(paste(RISE$Gene1,RISE$Gene2)),]
+sum(!duplicated(c(RISE$Gene1,RISE$Gene2)))
+write.table(RISE,'12.ALL/07.RISE.txt',row.names = F,quote = F,sep='\t')
