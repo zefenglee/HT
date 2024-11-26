@@ -1,4 +1,4 @@
-Title: Integrative Transcriptomic Profiling Reveals Novel Biomarkers and a Stacking Model for Enhanced Risk Characterization in Early Hashimoto's thyroiditis
+Title: Transcriptomic Profiling and Machine Learning Reveal Novel RNA Signatures for Enhanced Molecular Characterization of Hashimoto's Thyroiditis
 
 Abstract
 Background Hashimoto's thyroiditis (HT), an autoimmune disease with increasing prevalence, presents challenges for early detection due to subtle clinical symptoms in Early Hashimoto's thyroiditis (EHT) cases. This study aimed to utilize whole-transcriptome sequencing data to identify characteristic biomarkers for early diagnosis and treatment targets in EHT.
